@@ -1,6 +1,9 @@
-import logo from './logo.svg';
-import './App.css';
-import Header from "./Teste.js";
+import React from 'react';
+import './style.css';
+/*Lembrem de importar as componentes que vcs crierem, 
+dessa forma:  */
+import Home from './Home'
+import Teste from "./Teste.js";
 import {
   BrowserRouter as Router,
   Routes,
@@ -10,36 +13,34 @@ import {
 
 function App() {
   return (
-    /*<div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>*/
-    
-    <Router>
-      <div class="container">
-        <h1><a href="home.html">Não Teams</a></h1>
-        <nav>
-          <ul>
-            <li><Link to="./Teste">Início</Link></li>
-          </ul>
-        </nav>
-      </div> 
-      <Routes>
-        <Route path="./Teste" element={<Header/>}/>
-      </Routes>
-    </Router>  
+    <>
+      <Router>
+        <div class="container">
+            <h1>Nao Teams</h1>
+            <nav>
+              <ul>
+                {/* Aqui e o navegador, simplesmente adicionem o nome simples do componente,
+                por exemplo Link to="Contato" ou Link to="Salas" etc*/}
+                <li><Link to="Inicio">Início</Link></li>
+                <li><Link >Salas de Aula</Link></li>
+                <li><Link to="Testes">Testes</Link></li>
+                <li><Link >Contato</Link></li>
+                <li class="login"><Link >Login</Link></li>
+              </ul>
+            </nav>
+          </div>
+        <Routes>
+          {/*Lembrem de tambem adicionar o route, senao o react dom n funciona
+          No seguinte formato por exemplo: 
+              <Route path="NomeDoComponente1" element={<NomeDoComponente2/>}/>   
+          "NomeDoComponente2 precisa ser o nome exato do componente importado
+          "NomeDoComponente1 nao precisa ser desde que seja igual ao nome usado no navegador(linha 22)*/}
+          <Route index element={<Home/>}/>
+          <Route path="Inicio" element={<Home/>}/>
+          <Route path="Testes" element={<Teste/>}/>
+        </Routes>
+      </Router>  
+    </>
   );
 }
 
