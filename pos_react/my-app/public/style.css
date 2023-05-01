@@ -29,6 +29,16 @@ a:hover {
     color: #0056b3;
 }
 
+Link {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+Link:hover {
+    color: #0056b3;
+}
+
 header {
     background-color: #fff;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);

@@ -15,20 +15,22 @@ function App() {
   return (
     <>
       <Router>
-        <div class="container">
-            <h1>Nao Teams</h1>
-            <nav>
-              <ul>
-                {/* Aqui e o navegador, simplesmente adicionem o nome simples do componente,
-                por exemplo Link to="Contato" ou Link to="Salas" etc*/}
-                <li><Link to="Inicio">Início</Link></li>
-                <li><Link >Salas de Aula</Link></li>
-                <li><Link to="Testes">Testes</Link></li>
-                <li><Link >Contato</Link></li>
-                <li class="login"><Link >Login</Link></li>
-              </ul>
-            </nav>
-          </div>
+        <header>
+          <div class="container">
+              <h1>Nao Teams</h1>
+              <nav>
+                <ul>
+                  {/* Aqui e o navegador, simplesmente adicionem o nome simples do componente,
+                  por exemplo Link to="Contato" ou Link to="Salas" etc*/}
+                  <li><Link to="Inicio">Início</Link></li>
+                  <li><Link >Salas de Aula</Link></li>
+                  <li><Link to="Testes">Testes</Link></li>
+                  <li><Link >Contato</Link></li>
+                  <li class="login"><Link >Login</Link></li>
+                </ul>
+              </nav>
+            </div>
+          </header>
         <Routes>
           {/*Lembrem de tambem adicionar o route, senao o react dom n funciona
           No seguinte formato por exemplo: 
