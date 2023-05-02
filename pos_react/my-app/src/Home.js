@@ -18,7 +18,7 @@ function Home() {
                 metus odio. Fusce lacinia mi id eros laoreet, id mollis eros sagittis.
                 Vivamus luctus ante eu est imperdiet, eu cursus libero interdum.
                 </p>
-                <div class="announcements">
+                <div className="announcements">
                     <figure>
                         <img src="imagens\anuncio.png" alt="Announcements Image"  ></img>
                     </figure>
