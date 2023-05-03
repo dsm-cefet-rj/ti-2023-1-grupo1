@@ -9,32 +9,7 @@ function Login() {
   
   return (
     <>
-    <header>
-      <div className="container">
-        <h1>
-          <a href="home.html">Não Teams</a>
-        </h1>
-        <nav>
-          <ul>
-            <li>
-              <a href="home.html">Início</a>
-            </li>
-            <li>
-              <a href="classroom.html">Salas de Aula</a>
-            </li>
-            <li>
-              <a href="tests.html">Testes</a>
-            </li>
-            <li>
-              <a href="contact.html">Contato</a>
-            </li>
-            <li className="login">
-              <a href="login.html">Login</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </header>
+    
     <div className="login-container">
       <form className="login-form" action="" id="login-form">
         <h2>Login to Education Website</h2>
