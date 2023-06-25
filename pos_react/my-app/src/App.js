@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import './style.css';
-/*Lembrem de importar as componentes que vcs crierem, 
+/*Lembrem de importar as componentes que vcs criarem, 
 dessa forma:  */
 import Home from './Home';
 import Teste from './Teste.js';
