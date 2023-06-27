@@ -4,8 +4,8 @@ const MongoClient = require('mongodb').MongoClient;
 const url = 'mongodb://localhost:27017';
 
 // Nome do banco de dados e da coleção
-const dbName = 'nomedobancodedados';
-const collectionName = 'nomedacolecao';
+const dbName = 'bd_psw';
+const collectionName = 'colec_psw';
 
 // Função para conectar ao banco de dados MongoDB
 async function connect() {
@@ -25,3 +25,5 @@ async function connect() {
 }
 
 module.exports = connect;
+
+
