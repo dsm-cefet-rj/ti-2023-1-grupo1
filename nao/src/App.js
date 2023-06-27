@@ -2,36 +2,6 @@ import logo from './logo.svg';
 import './App.css';
 import {BrowserRouter, Route, useLocation    } from "react-router-dom";
 
-const connect = require('./db.js');
-
-async function readData() {
-  try {
-    const collection = await connect();
-    
-    // Lendo os documentos da coleção
-    const documents = await collection.find({}).toArray();
-
-    // Retornando os dados no formato desejado
-    const data = documents.map((document) => ({
-      login: document.login,
-      senha: document.senha,
-    }));
-
-    return data;
-  } catch (error) {
-    console.log('Erro:', error);
-    throw error;
-  }
-}
-
-// lendo dados de login e senha do banco de dados
-readData()
-  .then((data) => {
-    console.log(data);
-  })
-  .catch((error) => {
-    console.log('Erro:', error);
-  });
 
 
 function App() {
